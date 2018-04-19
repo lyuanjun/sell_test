@@ -1,0 +1,36 @@
+#logging:
+#  pattern:
+#    console: "%d - %msg %n"
+#  file: E:/logs_Exercise/sell.log
+#  level:
+#    com.imooc.service.LoggerTest2:debug
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root$123
+    url: jdbc:mysql://rm-wz978zsu9h4qnydby.mysql.rds.aliyuncs.com/lyj_test?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
+  jackson:
+    default-property-inclusion: non_null
+  redis:
+    host: r-wz9c9b267132c234.redis.rds.aliyuncs.com
+    port: 6379
+    password: Lyj940519
+server:
+  context-path: /sell
+
+
+wechat:
+  mpAppId : wx38825b3ac1f93bce
+  mpAppSecret : 5f5a8735ecddb1bed20d9bafa04a88d0
+  templateId:
+    ordertemplateId : yaEnT3s75QyAg_9ck8zdUYVWBqYmU4wk19PdaNzHAoA
+
+projectUrl:
+  wechatMpAuthorize: http://lyj.mynatapp.cc
+  wechatOpenAuthorize: http://lyj.mynatapp.cc
+  sell: http://lyj.mynatapp.cc
