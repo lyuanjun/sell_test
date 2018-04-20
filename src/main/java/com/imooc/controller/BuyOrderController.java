@@ -11,8 +11,6 @@ import com.imooc.service.OrderService;
 import com.imooc.utils.ResultVOUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.Cacheable;
-import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.util.CollectionUtils;
@@ -35,8 +33,6 @@ public class BuyOrderController {
     private OrderService orderService;
     @Autowired
     private BuyerService buyerService;
-    @Autowired
-    private WebSocket webSocket;
 
     /**
      *创建订单
@@ -57,7 +53,7 @@ public class BuyOrderController {
 
         OrderDTO resultOrderDto =  orderService.create(orderDTO);
 
-        webSocket.sendMessage("有新的订单了！");
+        //webSocket.sendMessage("有新的订单了！");
         Map<String,String> map = new HashMap<String,String>();
         map.put("orderId",resultOrderDto.getOrderId());
         return ResultVOUtil.success(map);

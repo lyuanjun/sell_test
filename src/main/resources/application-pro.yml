@@ -22,7 +22,6 @@ spring:
     password: Lyj940519
 server:
   context-path: /sell
-  port: 8001
 
 
 wechat:
@@ -34,4 +33,4 @@ wechat:
 projectUrl:
   wechatMpAuthorize: http://lyj.mynatapp.cc
   wechatOpenAuthorize: http://lyj.mynatapp.cc
-  sell: http://lyj.mynatapp.cc
+  sell: http://39.108.215.204:8080

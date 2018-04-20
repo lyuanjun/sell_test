@@ -1,22 +1,13 @@
 package com.imooc.controller;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Component;
-
-import javax.websocket.OnClose;
-import javax.websocket.OnMessage;
-import javax.websocket.OnOpen;
-import javax.websocket.Session;
-import javax.websocket.server.ServerEndpoint;
-import java.io.IOException;
-import java.util.concurrent.CopyOnWriteArraySet;
 
 //@Component
 //@ServerEndpoint("/webSocket")
 @Slf4j
 public class WebSocket {
 
-    private Session session;
+    /*private Session session;
 
     private static CopyOnWriteArraySet<WebSocket> webSockets = new CopyOnWriteArraySet<>();
 
@@ -47,6 +38,6 @@ public class WebSocket {
                 e.printStackTrace();
             }
         }
-    }
+    }*/
 
 }
