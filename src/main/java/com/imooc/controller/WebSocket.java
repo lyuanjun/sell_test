@@ -11,8 +11,8 @@ import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
 import java.util.concurrent.CopyOnWriteArraySet;
 
-@Component
-@ServerEndpoint("/webSocket")
+//@Component
+//@ServerEndpoint("/webSocket")
 @Slf4j
 public class WebSocket {
 
